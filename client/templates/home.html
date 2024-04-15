@@ -1,0 +1,67 @@
+<!----------------------------------------------------------
+    ACCUEIL DE L'APPLICATION
+
+    PRESENTE UN FORMULAIRE D'AUTHENTIFICATION POUR CREER
+    ET ACCEDER A SON ESPACE
+------------------------------------------------------------>
+
+
+
+<!----------------------------------------------------------
+    TEMPLATE QUI CONTIENT TOUT CE QUI VA DANS LE BODY
+------------------------------------------------------------>
+<template name="tmpltePrincipal">
+	{{> yield }}
+</template>
+
+
+<!----------------------------------------------------------
+TEMPLATE QUI GERE LA REDIRECTION DEPUIS UNE PAGE INEXISTANTE
+------------------------------------------------------------>
+<template name="tmplteNotExists">
+  <div>
+    <h1>Lo sentimos, esta página no existe</h1>
+  </div>
+</template>
+
+
+<!----------------------------------------------------------
+      TEMPLATE QUI DEFINIT LA PAGE D'ACCUEIL :
+      - LE MENU DE NAVIGATION
+      - LE CORPS DE LA PAGE
+------------------------------------------------------------>
+<template name="tmpltePageAccueil">
+  <div class="siteContainer siteContainerAccueil" id="idSiteContainer">
+    <div class="sitePusher">
+      <p class="afterHeader"></p>
+    	{{> tmplteAccueil }}
+      <div class="siteCache js-removePush" id="idSiteCache"></div>
+    </div>
+  </div>
+</template>
+
+
+<!----------------------------------------------------------
+                 CORPS DE LA PAGE D'ACCUEIL
+------------------------------------------------------------>
+<template name="tmplteAccueil">
+  <section class="siteContent siteContentAccueil">
+    <article class="containerIntro">
+      <div class="gridIntro gridIntroHome">
+        <div class="gridIntroDiv">
+          <h1>Hola,</h1>
+          <p class="titreGridIntro">
+            <span class="notOrdi">BONA FIDE</span><span class="ordi">BONAFIDE</span> MICRO BANK <span class="point"></span>
+          </p>
+        </div>
+      </div>
+      <div class="gridPresentation">
+        <div class="divPresentation">
+
+        </div>
+      </div>
+    </article>
+  </section>
+</template>
+
+
